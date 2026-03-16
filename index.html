@@ -63,6 +63,8 @@
 
     <br>
     <button onclick="addNumbers()">Add</button>
+    <button onclick="subtractNumbers()">Subtract</button>
+
 
     <div class="result" id="result"></div>
 </div>
@@ -75,6 +77,15 @@
         const sum = n1 + n2;
 
         document.getElementById("result").innerText = "Result: " + sum;
+    }
+
+    function subtractNumbers() {
+        const n1 = Number(document.getElementById("num1").value);
+        const n2 = Number(document.getElementById("num2").value);
+
+        const difference = n1 - n2;
+
+        document.getElementById("result").innerText = "Result: " + difference;
     }
 </script>
 
